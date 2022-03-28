@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TRBK27F');</script>
+    <!-- End Google Tag Manager -->
+    <title>Gerador ID</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column justify-content-center align-self-center" style="height: 100vh;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRBK27F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container">
+        <h1 style="margin-bottom: 20px;"> Teste de eventos da Meta Conversion API - Server Side</h1>
+        <div class="d-flex flex-row">
+            <button type="button" class="btn btn-primary" style=" width: 100px; " onclick="">PageView</button>
+            <div class="input-group mb-3" style=" margin-left: 10px; max-width: 300px; margin-bottom: 0 !important;">
+                <input value=":)" type="text" class=" form-control" placeholder="Clique em Gerar ID" aria-label="Clique em Gerar ID" aria-describedby="button-addon2" style=" background: #fff; " disabled>
+            </div>
+            <button type="button" class="btn btn-primary" style=" width: 100px; " onclick="">AddToCart</button>
+            <div class="input-group mb-3" style=" margin-left: 10px; max-width: 300px; margin-bottom: 0 !important;">
+                <input value=":)" type="text" class=" form-control" placeholder="Clique em Gerar ID" aria-label="Clique em Gerar ID" aria-describedby="button-addon2" style=" background: #fff; " disabled>
+            </div>
+            <button type="button" class="btn btn-primary" style=" width: 100px; " onclick="">InitiateCheckout</button>
+            <div class="input-group mb-3" style=" margin-left: 10px; max-width: 300px; margin-bottom: 0 !important;">
+                <input value=":)" type="text" class=" form-control" placeholder="Clique em Gerar ID" aria-label="Clique em Gerar ID" aria-describedby="button-addon2" style=" background: #fff; " disabled>
+            </div>
+            <button type="button" class="btn btn-primary" style=" width: 100px; " onclick="">Purchase</button>
+            <div class="input-group mb-3" style=" margin-left: 10px; max-width: 300px; margin-bottom: 0 !important;">
+                <input value=":)" type="text" class=" form-control" placeholder="Clique em Gerar ID" aria-label="Clique em Gerar ID" aria-describedby="button-addon2" style=" background: #fff; " disabled>
+            </div>
+        </div>
+        <ul style="margin-top: 20px;">
+            <li>Insira um id diferente no nome da sua arte para cada uma produzida!</li>
+            <li>Ao gerar um novo id ele automaticamente será adicionado a sua área de transferência!</li>
+        </ul>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+    <script>
+        // Instantiate
+        var uid = new ShortUniqueId();
+
+        function setIdInput() {
+            document.querySelector('input').value = "*" + uid() + "*"
+            input = document.querySelector('input')
+            input.select()
+            input.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(input.value);
+
+        }
+    </script>
+    <style>
+        .feedback {
+            animation: feed 5s
+        }
+        
+        @keyframes feed {
+            0% {
+                border: 2px green;
+            }
+            50% {
+                border: 20px green;
+            }
+            100% {
+                border: 2px green;
+            }
+        }
+    </style>
+</body>
+
+</html>
