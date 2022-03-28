@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="facebook-domain-verification" content="g0gf0dno1zbi9duog4yvsj281cjhus" />
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -12,7 +13,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TRBK27F');</script>
     <!-- End Google Tag Manager -->
-    <title>Gerador ID</title>
+    <title>Teste da API de Conversão</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 
@@ -34,25 +35,13 @@
             
         <ul style="margin-top: 20px;">
             <li>Clique nos botões para disparar o evento de conversão desejado.</li>
-            <li>Verifique se o evento de servidor e navegador foi detectado pela BM do Facebook. Os eventos deverão estar deduplicados</li>
+            <li>Verifique se o evento de servidor e navegador foi detectado pela BM do Facebook. Os eventos deverão estar desduplicados</li>
         </ul>
 
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
-    <script>
-        // Instantiate
-        var uid = new ShortUniqueId();
-
-        function setIdInput() {
-            document.querySelector('input').value = "*" + uid() + "*"
-            input = document.querySelector('input')
-            input.select()
-            input.setSelectionRange(0, 99999);
-            navigator.clipboard.writeText(input.value);
-
-        }
-    </script>
+    
     <style>
         .feedback {
             animation: feed 5s
